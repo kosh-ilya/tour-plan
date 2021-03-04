@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Mulish' sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
 }
 
@@ -351,11 +351,11 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #ffffff;
 }
 
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -363,7 +363,7 @@ template {
   padding-bottom: 40px;
 }
 
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
 }
@@ -411,4 +411,10 @@ template {
   border-radius: 50%;
 }
 
+.user__name {
+  padding-left: 18px;
+  color: #333333;
+  font-size: 14px;
+  line-height: 18px;
+}
 /*# sourceMappingURL=style.css.map */
