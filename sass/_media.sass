@@ -1,21 +1,71 @@
 @media (max-width: 1200px)
 	.container
 		max-width: 960px
+
 @media (max-width: 992px)
 	.container
-		max-width: 700px
+		max-width: 780px
+		.logo
+			width: 132px
 		.navbar
 			&-top
 				padding: 30px 0
 			&__search
-				max-width: 340px
-				margin-left: auto
+				margin-left: 47px
 			&-menu
-				padding: 22px 0
+				padding: 21px 0
 				&__link
 					font-size: 12px
 					line-height: 15px
-@media (max-width: 768px)
+	.search
+		&__input
+			width: 340px
+
+@media (max-width: 820px)
 	.container
-		max-width: 576px
+		max-width: 700px
+		.logo
+			width: 132px
+	.navbar
+		&-top
+			padding: 30px 0
+		&__search
+			margin-left: 27px
+		&-menu
+			width: 673px
+			padding: 21px 0
+			margin: auto
+
+			&__link
+				font-size: 12px
+				line-height: 15px
+	.search
+		&__input
+			max-width: 340px
+
+@media (max-width: 725px)
+	.container
+		max-width: 550px
 		width: 92%
+	.navbar
+		&__search, &__user, &-menu
+			display: none
+	.menu
+		&-button
+			display: flex
+			width: 16px
+			height: 11px
+			padding: 0
+			align-items: center
+			justify-content: space-between
+			flex-direction: column
+			border: none
+			background-color: #fff
+			&__line
+				width: 16px
+				height: 1px
+				background-color: $text-color
+@media ( max-width: 480px )
+	.logo
+		&__image
+			width: 99px
