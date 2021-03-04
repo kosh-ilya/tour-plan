@@ -607,7 +607,13 @@ template {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .container .navbar-top {
+    padding: 21px 0;
+  }
   .logo__image {
     width: 99px;
   }
