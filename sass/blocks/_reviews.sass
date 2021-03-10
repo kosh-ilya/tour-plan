@@ -1,0 +1,92 @@
+.reviews
+	padding: 40px 0 70px 0
+	&__title
+		font-weight: bold
+		font-size: 36px
+		line-height: 45px
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 70px
+	&-slider
+		&__item
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 730px
+			position: relative
+			margin: 45px auto 0
+			background-color: #ffffff
+			border-radius: 8px
+			margin-top: 45px
+			padding: 0 64px 30px 60px
+			&::before
+				content: ""
+				width: 70px
+				height: 48px
+				position: absolute
+				left: 62px
+				top: 13px
+				background: url("../img/quote-right.svg") no-repeat
+			&::after
+				content: ""
+				width: 70px
+				height: 48px
+				position: absolute
+				right: 62px
+				top: 118px
+				background: url("../img/quote-left.svg") no-repeat
+		&__button
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 30px
+			height: 30px
+			background-size: 10px
+			background-position: center
+			cursor: pointer
+			border: none
+			z-index: 99
+			&--prev
+				background-size: 10px
+				background: url("../img/arrow-prev-secondary.svg") no-repeat
+				background-position: center
+				left: 0
+			&--next
+				background-size: 10px
+				background: url("../img/arrow-next-secondary.svg") no-repeat
+				background-position: center
+				right: 0
+		&__profile
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-top: -45px
+			margin-bottom: 32px
+
+		&__avatar
+			width: 90px
+			height: 90px
+			border-radius: 50%
+			object-fit: cover
+			margin-bottom: 9px
+		&__username
+			font-weight: bold
+			font-size: 12px
+			line-height: 15px
+			margin-bottom: 10px
+			color: $primary
+		&__date
+			font-weight: normal
+			font-size: 10px
+			line-height: 13px
+			margin-bottom: 4px
+		&__rating
+			display: flex
+			align-items: center
+		&__text
+			max-width: 537px
+			font-weight: normal
+			font-size: 12px
+			line-height: 160%
+			text-align: justify
+			margin: auto
