@@ -8,20 +8,10 @@
     <title>Best Tour Plan - Hotel Booking</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Nunito:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=6952a8aa-7cd4-430e-a4a2-8c8fcd66a38d&lang=ru_RU"></script>
-    <script>
-      ymaps.ready(init);
-      function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [7.89059, 98.3981],
-          zoom: 7,
-        });
-      }
-    </script>
   </head>
   <body>
     <header class="navbar">
@@ -133,7 +123,9 @@
           <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/<small>5</small></span>
+            <span class="rating__counter"
+              >4.5/<small class="rating__counter__small">5</small></span
+            >
           </div>
           <!-- /.hotel-info__rating -->
         </div>
@@ -238,7 +230,12 @@
             </div>
             <!-- /.booking -->
             <div class="map">
-              <div id="map" style="width: 100%; height: 100%"></div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13294.74878904349!2d98.29374670017691!3d7.837097385158689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1615286031488!5m2!1sru!2sru"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -247,6 +244,23 @@
         <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input
+            type="text"
+            class="subscribe__input"
+            placeholder="Your email address"
+          />
+          <button class="subscribe__button">Send</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
     </section>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
