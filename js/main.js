@@ -3,7 +3,6 @@ const hotelSlider = new Swiper(".hotel-slider", {
   loop: true,
   loopedSlides: 1,
   slidesPerView: 1,
-  effect: "coverflow",
 
   // Navigation arrows
   navigation: {

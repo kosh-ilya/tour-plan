@@ -7,12 +7,15 @@
 		text-align: center
 		text-transform: uppercase
 		margin-bottom: 70px
+		margin-top: 0
 	&-slider
+		&__image
+			margin-right: 2px
 		&__item
 			display: flex
 			flex-direction: column
 			align-items: center
-			width: 730px
+			max-width: 730px
 			position: relative
 			margin: 45px auto 0
 			background-color: #ffffff
@@ -38,7 +41,7 @@
 		&__button
 			position: absolute
 			top: 50%
-			transform: translateY(-50%)
+			transform: translateY(-90%)
 			width: 30px
 			height: 30px
 			background-size: 10px
@@ -50,12 +53,12 @@
 				background-size: 10px
 				background: url("../img/arrow-prev-secondary.svg") no-repeat
 				background-position: center
-				left: 0
+				left: 14px
 			&--next
 				background-size: 10px
 				background: url("../img/arrow-next-secondary.svg") no-repeat
 				background-position: center
-				right: 0
+				right: 22px
 		&__profile
 			display: flex
 			flex-direction: column
@@ -68,7 +71,7 @@
 			height: 90px
 			border-radius: 50%
 			object-fit: cover
-			margin-bottom: 9px
+			margin-bottom: -5px
 		&__username
 			font-weight: bold
 			font-size: 12px
