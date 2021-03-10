@@ -1100,6 +1100,10 @@ template {
     height: 179px;
     margin-top: 16px;
   }
+  .slider-button {
+    -webkit-background-size: 4px 8px;
+            background-size: 4px 8px;
+  }
   .hotel-right {
     height: 400px;
   }
@@ -1108,6 +1112,12 @@ template {
   }
   .map {
     height: 173px;
+  }
+  .slider-button_prev {
+    left: 0px;
+  }
+  .slider-button_next {
+    right: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
