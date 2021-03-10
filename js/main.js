@@ -16,8 +16,6 @@ const hotelSlider = new Swiper(".hotel-slider", {
 const reviewsSlider = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: true,
-  loopedSlides: 1,
-  slidesPerView: 1,
 
   // Navigation arrows
   navigation: {
