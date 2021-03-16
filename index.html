@@ -595,7 +595,7 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people thinks about us</h2>
+        <h2 class="reviews__title">What people think about us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -795,7 +795,7 @@ quest"
             class="logo footer__logo"
           />
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__title--mb-6">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -825,7 +825,9 @@ quest"
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--mb-5">
+              ADDITIONAL INFORMATION
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us </a>
@@ -868,7 +870,7 @@ quest"
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
+            <h3 class="footer__title footer__title--mb-5">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions </a>
@@ -892,7 +894,7 @@ quest"
             </p>
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
+                <div class="footer__icon-wrapper footer__icon--mr-10">
                   <img
                     src="./img/icon/map-contact.svg"
                     alt="icon: map"
@@ -902,8 +904,8 @@ quest"
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
+              <li class="footer__item footer__item--mb-8">
+                <div class="footer__icon-wrapper footer__icon-wrapper--mr-9">
                   <img
                     src="./img/icon/phone-contact.svg"
                     alt="icon: call"
@@ -918,11 +920,11 @@ quest"
                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper">
+                <div class="footer__icon-wrapper footer__icon-wrapper--mr-8">
                   <img
                     src="./img/icon/email-contact.svg"
                     alt="icon: email"
-                    class="footer__icon"
+                    class="footer__icon footer__icon--mr-8"
                   />
                 </div>
                 cherly.lawson@example.com
@@ -931,7 +933,7 @@ quest"
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
             <form action="#" class="footer__form">
               <input
                 type="text"
@@ -945,17 +947,38 @@ quest"
               <textarea
                 placeholder="Message"
                 cols="30"
-                rows="10"
                 class="footer__message"
               ></textarea>
-              <button type="submit" class="button footer__button">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer-contact__button">
+                <button type="submit" class="button footer__button">
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__contact-form -->
+          <ul class="footer-payment-ul">
+            <li class="footer-payment-item">
+              <a href="#" class="footer-payment-link">Disclaimer</a>
+            </li>
+            <li class="footer-payment-item">
+              <a href="#" class="footer-payment-link">Conditions of use</a>
+            </li>
+            <li class="footer-payment-item">
+              <a href="#" class="footer-payment-link">Cancellation policy</a>
+            </li>
+          </ul>
+          <div class="footer-payment-image">
+            <img
+              src="./img/icon/payment.png"
+              alt="icon: payment"
+              class="footer-payment-icon"
+            />
+          </div>
         </div>
+        <!-- /.footer-wrapper -->
       </div>
-      <!-- /.footer-wrapper -->
       <!-- /.container -->
     </footer>
     <script src="./js/swiper-bundle.min.js"></script>
