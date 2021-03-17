@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo"
@@ -23,7 +23,10 @@
               src="./img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
           /></a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -33,7 +36,7 @@
               <img src="./img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="./img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -55,6 +58,35 @@
         <div class="container">
           <nav class="nav">
             <ul class="navbar-menu">
+              <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                <a
+                  href="#"
+                  class="user navbar__user navbar__user--mobile--visible"
+                >
+                  <img
+                    src="./img/user-avatar.jpg"
+                    alt="Avatar: Nathan"
+                    class="user__avatar"
+                  />
+                  <span class="user__name user__name--light">Nathan</span>
+                </a>
+                <!-- /.user -->
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                <form
+                  action="#"
+                  class="search navbar__search navbar__search--mobile--visible"
+                >
+                  <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Search Location"
+                  />
+                  <button class="search__button">
+                    <img src="./img/search.svg" alt="Icon: search" />
+                  </button>
+                </form>
+              </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
@@ -894,7 +926,7 @@ quest"
             </p>
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
-                <div class="footer__icon-wrapper footer__icon--mr-10">
+                <div class="footer__icon-wrapper footer__icon-wrapper--mr-10">
                   <img
                     src="./img/icon/map-contact.svg"
                     alt="icon: map"
@@ -914,8 +946,8 @@ quest"
                 </div>
 
                 Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm)
+                Tel (hotline) Monday - Saturday: 52-&nbsp;56-61-38 (08:00 am –
+                20:00 pm)
                 <br />
                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
@@ -949,7 +981,7 @@ quest"
                 cols="30"
                 class="footer__message"
               ></textarea>
-              <div class="footer-contact__button">
+              <div class="footer-contact-button">
                 <button type="submit" class="button footer__button">
                   Send
                 </button>
@@ -958,24 +990,27 @@ quest"
             </form>
           </div>
           <!-- /.footer__contact-form -->
-          <ul class="footer-payment-ul">
-            <li class="footer-payment-item">
-              <a href="#" class="footer-payment-link">Disclaimer</a>
-            </li>
-            <li class="footer-payment-item">
-              <a href="#" class="footer-payment-link">Conditions of use</a>
-            </li>
-            <li class="footer-payment-item">
-              <a href="#" class="footer-payment-link">Cancellation policy</a>
-            </li>
-          </ul>
-          <div class="footer-payment-image">
-            <img
-              src="./img/icon/payment.png"
-              alt="icon: payment"
-              class="footer-payment-icon"
-            />
+          <div class="footer-payment">
+            <ul class="footer-payment-ul">
+              <li class="footer-payment-item">
+                <a href="#" class="footer-payment-link">Disclaimer</a>
+              </li>
+              <li class="footer-payment-item">
+                <a href="#" class="footer-payment-link">Conditions of use</a>
+              </li>
+              <li class="footer-payment-item">
+                <a href="#" class="footer-payment-link">Cancellation policy</a>
+              </li>
+            </ul>
+            <div class="footer-payment-image">
+              <img
+                src="./img/icon/payment.png"
+                alt="icon: payment"
+                class="footer-payment-icon"
+              />
+            </div>
           </div>
+          <!-- /.footer-payment -->
         </div>
         <!-- /.footer-wrapper -->
       </div>
