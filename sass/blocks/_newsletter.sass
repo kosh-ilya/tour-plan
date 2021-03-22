@@ -33,12 +33,18 @@
 			font-size: 36px
 			line-height: 45px
 			text-transform: uppercase
+	&__input
+		&-group
+			position: relative
+			height: 55px
+			border-radius: 4px
+
 .subscribe
 	position: relative
 	width: 350px
 	height: 55px
 	border-radius: 4px
-	overflow: hidden
+	/*overflow: hidden
 	&__input
 		position: absolute
 		width: 100%
@@ -49,6 +55,7 @@
 		font-size: 14px
 		line-height: 18px
 		border: none
+		border-radius: 4px
 	&__button
 		min-width: 65px
 		position: absolute
@@ -61,3 +68,22 @@
 		font-weight: normal
 		font-size: 12px
 		line-height: 15px
+		border-radius: 0 4px 4px 0
+label
+	&.invalid
+		position: absolute
+		top: -35px
+		left: 0px
+		background: $primary
+		color: $light
+		padding: 5px 10px
+		border-radius: 4px
+	&.invalid::after
+		position: absolute
+		bottom: -5px
+		background: $primary
+		content: ""
+		width: 10px
+		height: 10px
+		transform: rotate(45deg)
+		left: 10px

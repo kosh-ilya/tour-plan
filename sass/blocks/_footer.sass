@@ -106,10 +106,13 @@
 		text-decoration: none
 		color: inherit
 	&__input
-		flex-basis: 47%
-		margin-bottom: 15px
-		font-size: 12px
-		line-height: 15px
+		width: 100%
+		&-group
+			flex-basis: 47%
+			margin-bottom: 15px
+			font-size: 12px
+			line-height: 15px
+			position: relative
 	&__message
 		background-color: #fff
 		border-radius: 4px
@@ -173,3 +176,22 @@
 			align-items: center
 	&__info
 		display: block
+label
+	&.invalid
+		position: absolute
+		top: -25px
+		left: 10px
+		background: $primary
+		color: $light
+		padding: 5px 10px
+		border-radius: 4px
+		font-size: 14px
+	&.invalid::after
+		position: absolute
+		bottom: -5px
+		background: $primary
+		content: ""
+		width: 10px
+		height: 10px
+		transform: rotate(45deg)
+		left: 10px

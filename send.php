@@ -25,7 +25,7 @@ header('Location: thankyou.html');
 
 };
 
-$news = $_POST['news'];
+$news = $_POST['email'];
 
 // Формирование самого письма
 
