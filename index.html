@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <title>Best Tour Plan - Hotel Booking</title>
 
     <link
@@ -23,7 +24,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo"
+          <a href="index.html" class="logo" data-aos="zoom-out-right"
             ><img
               class="logo__image"
               src="./img/horizontal-logo.svg"
@@ -42,7 +43,11 @@
               <img src="./img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="zoom-out-left"
+          >
             <img
               src="./img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -770,7 +775,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right">
             <img
               src="./img/activity-1.jpg"
               alt="The curious corner 
@@ -784,7 +789,7 @@ of chamarel"
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right">
             <img
               src="./img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -803,7 +808,7 @@ of chamarel"
             </button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-left">
             <img
               src="./img/activity-3.jpg"
               alt="Tamarind falls hiking
@@ -819,7 +824,7 @@ trip - full day
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-left">
             <img
               src="./img/activity-4.jpg"
               alt="The blue marine discovery
@@ -841,7 +846,7 @@ quest"
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a class="footer-logo-link" href="#">
+          <a class="footer-logo-link" data-aos="zoom-out-right" href="#">
             <img
               src="./img/vertical-logo.svg"
               alt="Logo: Best tour plan"
@@ -1018,7 +1023,7 @@ quest"
                   placeholder="Phone Number*"
                   name="phone"
                   required
-                  minlength="2"
+                  minlength="18"
                 />
               </div>
               <textarea
@@ -1087,7 +1092,7 @@ quest"
               placeholder="Phone Number*"
               name="phone"
               required
-              minlength="2"
+              minlength="18"
             />
           </div>
           <div class="modal__input-group">
@@ -1118,6 +1123,7 @@ quest"
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/parallax.min.js"></script>
   </body>

@@ -1037,6 +1037,24 @@
 		&__input
 			padding-left: 20px
 			padding-right: 74px
+		label
+			&.invalid
+				position: absolute
+				top: -26px
+				left: 10px
+				background: $primary
+				color: $light
+				padding: 5px 10px
+				border-radius: 4px
+			&.invalid::after
+				position: absolute
+				bottom: -5px
+				background: $primary
+				content: ""
+				width: 10px
+				height: 10px
+				transform: rotate(45deg)
+				left: 10px
 	.reviews
 		&__title
 			width: 245px

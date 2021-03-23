@@ -66,22 +66,26 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "The name must be at least 2 characters long",
+          minlength: "Enter the full name",
         },
         email: {
           required: "Please specify your email",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Use format main@mail.ru",
         },
         phone: {
           required: "Please specify your phone",
-          minlength: "The phone must be at least 2 characters long",
+          minlength: "Enter the full number",
         },
         news: {
           required: "Please specify your email",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Use format main@mail.ru",
         },
       },
     });
   });
   $(".input-mask").mask("+7 (000) 000-00-00");
+
+  AOS.init({
+    disable: "mobile",
+  });
 });
