@@ -15,6 +15,7 @@
 				height: 100%
 
 				position: absolute
+
 	/*.projects
 	 /*&-slider
 	 /*&__slide
@@ -126,6 +127,10 @@
 	.projects
 		&-title
 			text-align: center
+		&-slider
+			&-text
+				&__title
+					font-size: 20px
 	.reviews
 		padding-left: 20px
 		padding-right: 20px
@@ -133,8 +138,9 @@
 			&-text
 				text-align: center
 			&__card
-				width: 450px
+				width: 80%
 				min-height: 267px
+				margin: 0 auto
 
 		&-button
 
@@ -216,6 +222,8 @@
 				padding: 10px
 				&__title
 					font-size: 20px
+				&__subtitle
+					text-align: center
 @media ( max-width: 768px	)
 	.container
 		max-width: 700px
@@ -336,6 +344,12 @@
 		padding-top: 55px
 		&__list
 			width: 200px
+	.projects
+		&-button
+			&-prev
+				display: none
+			&-next
+				display: none
 
 @media	 ( max-width: 490px	)
 	.services
@@ -393,10 +407,41 @@
 			width: 145px
 			text-align: center
 	.projects
+
 		&-slider
+			display: flex
+
+			align-items: center
+
 			&__wrap
 				padding-left: 5px
+				display: flex
+
+				align-items: center
 			&__image
+	.reviews
+		&-slider
+			&-avatar
+
+				flex-direction: column
+				justify-content: center
+			&-avatar1
+
+				flex-direction: column
+				justify-content: center
+			&__job
+				text-align: center
+
+			&__card
+				padding: 0px
+			&__description
+				max-width: 354px
+				text-align: center
+				max-height: 180px
+			&__description1
+				max-width: 354px
+				text-align: center
+				max-height: 180px
 
 @media ( max-width: 350px	)
 	.partners
@@ -471,7 +516,7 @@
 		/*padding-right: 8px
 	.header
 		padding-top: 17px
-		padding-bottom: 27px
+		padding-bottom: 30px
 	.main
 		overflow: hidden
 		height: 800px

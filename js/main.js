@@ -21,8 +21,17 @@ const swiper = new Swiper(".projects-slider", {
     enabled: true,
   },
   breakpoints: {
-    350: {
+    576: {
       spaceBetween: 30,
+    },
+    490: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    350: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      height: 500,
     },
     319: {
       slidesPerView: 4,
@@ -33,7 +42,7 @@ const swiper = new Swiper(".projects-slider", {
 });
 function getDirection() {
   var windowWidth = window.innerWidth;
-  var direction = windowWidth <= 350 ? "vertical" : "horizontal";
+  var direction = windowWidth <= 489 ? "vertical" : "horizontal";
 
   return direction;
 }
@@ -47,7 +56,7 @@ const reviews = new Swiper(".reviews-slider", {
     prevEl: ".reviews-button-next ",
   },
   breakpoints: {
-    992: {
+    1200: {
       slidesPerView: 2,
     },
     768: {
@@ -92,7 +101,18 @@ $(".form").each(function () {
   });
 });
 $(".input-mask").mask("+7 (000) 000-00-00");
-
+$("a.scroll-to").on("click", function (e) {
+  e.preventDefault();
+  var anchor = $(this).attr("href");
+  $("html, body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $(anchor).offset().top - 60,
+      },
+      800
+    );
+});
 document.getElementById("send").addEventListener("click", function () {
   document.querySelector(".modal").classList.toggle("modal_active");
   document.querySelector("body").classList.toggle("body_active");
@@ -137,16 +157,4 @@ window.addEventListener("click", function (e) {
     document.querySelector(".modal").classList.toggle("modal_active");
     document.querySelector("body").classList.toggle("body_active");
   }
-});
-$("a.scroll-to").on("click", function (e) {
-  e.preventDefault();
-  var anchor = $(this).attr("href");
-  $("html, body")
-    .stop()
-    .animate(
-      {
-        scrollTop: $(anchor).offset().top - 60,
-      },
-      800
-    );
 });
