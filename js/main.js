@@ -1,5 +1,5 @@
 const swiper = new Swiper(".projects-slider", {
-  slidesPerView: 3.75,
+  slidesPerView: 3,
   spaceBetween: 30,
 
   direction: getDirection(),
@@ -21,47 +21,14 @@ const swiper = new Swiper(".projects-slider", {
     enabled: true,
   },
   breakpoints: {
-    /*1441: {
-      slidesOffsetBefore: 360,
-      slidesPerView: 4,
-    },
-
-    1433: {
-      slidesOffsetBefore: 120,
-      slidesPerView: 3.75,
-    },
-
-    1300: {
-      slidesOffsetBefore: 120,
-      slidesPerView: 3.75,
-    },
-    1100: {
-      slidesOffsetBefore: 70,
-      slidesPerView: 3,
-    },
-
-    992: {
-      slidesOffsetBefore: 40,
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 2,
-      slidesOffsetBefore: 30,
-    },
-    576: {
-      slidesPerView: 1,
-      slidesOffsetBefore: 40,
-    },
     350: {
-      slidesPerView: 1,
-      slidesOffsetBefore: 0,
+      spaceBetween: 30,
     },
-    280: {
+    319: {
       slidesPerView: 4,
-      slidesOffsetBefore: 0,
-      spaceBetween: 0,
       height: 1700,
-    },*/
+      spaceBetween: 15,
+    },
   },
 });
 function getDirection() {
@@ -97,27 +64,6 @@ menuButton.addEventListener("click", function () {
   console.log("клик по кнопке меню");
   document.querySelector(".nav-menu").classList.toggle("nav-menu--visible");
 });
-
-var modalButton = $("[data-toggle = modal]");
-var closeModalButton = $(".modal__close");
-
-modalButton.on("click", openModal);
-closeModalButton.on("click", closeModal);
-
-function openModal() {
-  var modalOverlay = $(".modal__overlay");
-  var modalDialog = $(".modal__dialog");
-
-  modalOverlay.addClass("modal__overlay--visible");
-  modalDialog.addClass("modal__dialog--visible");
-}
-function closeModal(event) {
-  event.preventDefault();
-  var modalOverlay = $(".modal__overlay");
-  var modalDialog = $(".modal__dialog");
-  modalOverlay.removeClass("modal__overlay--visible");
-  modalDialog.removeClass("modal__dialog--visible");
-}
 $(this).keydown(function (eventObject) {
   if (eventObject.which == 27) $(".modal").hide();
 });

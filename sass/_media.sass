@@ -27,15 +27,15 @@
 			/*&__image2
 			/* width: 490px
 			/* height: 529px
-/*@media	( max-width: 1440px	)
-	/*.projects
-	/* &-slider
-	 &__image
-	 max-width: 360px
-	 max-height: 400px
-	 &__image2
-	 max-width: 360px
-	 min-height: 400px
+@media	( min-width: 1440px	)
+	.projects
+		&-slider
+		&__image
+		 max-width: 360px
+		 max-height: 400px
+		&__image2
+		 max-width: 360px
+		 min-height: 400px
 
 		/*	&__image1
 		 display: none
@@ -210,7 +210,12 @@
 			&__card
 				width: 90%
 				margin: 0 auto
-
+	.projects
+		&-slider
+			&-text
+				padding: 10px
+				&__title
+					font-size: 20px
 @media ( max-width: 768px	)
 	.container
 		max-width: 700px
@@ -751,7 +756,8 @@
 
 			&__slide
 				width: 300px
-				height: 404px
+				min-height: 404px
+
 			&__image
 				max-height: 300px
 				object-fit: cover
@@ -762,7 +768,7 @@
 			&__wrap
 				padding-left: 10px
 				padding-right: 10px
-				padding-bottom: 23px
+				padding-bottom: 18px
 
 			&-text
 				min-height: 104px
