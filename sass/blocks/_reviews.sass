@@ -1,99 +1,125 @@
 .reviews
-	padding: 40px 0 70px 0
+	position: relative
 	&__title
-		font-weight: bold
-		font-size: 36px
-		line-height: 45px
-		text-align: center
+		font-size: 14px
+		line-height: 19px
+		letter-spacing: 2px
 		text-transform: uppercase
-		margin-bottom: 70px
-		margin-top: 0
+		color: $text-color-block
+		font-style: normal
+		font-weight: 600
+		margin-bottom: 20px
 	&-slider
+		position: relative
+		max-width: 1140px
+		margin: 0 auto
 
-		height: 325px
-		&__image
-			margin-right: 2px
-		&__item
+		&-avatar
 			display: flex
-			flex-direction: column
+			flex-wrap: wrap
+			width: 340px
+			justify-content: space-between
 			align-items: center
-			max-width: 730px
-			position: relative
-			margin: 45px auto 0
-			background-color: #ffffff
+			margin-bottom: 30px
+		&-avatar1
+			display: flex
+			flex-wrap: wrap
+			width: 340px
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 30px
+			width: 288px
+		&__card
+			display: flex
+			flex-wrap: wrap
+			width: 555px
+			min-height: 267px
+			background: #FFFFFF
+			border: 1px solid #E5EAF4
+			box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
 			border-radius: 8px
-			margin-top: 45px
-			padding: 0 64px 30px 60px
-			&::before
-				content: ""
-				width: 70px
-				height: 48px
-				position: absolute
-				left: 62px
-				top: 13px
-				background: url("../img/quote-right.svg") no-repeat
-			&::after
-				content: ""
-				width: 70px
-				height: 48px
-				position: absolute
-				right: 62px
-				top: 118px
-				background: url("../img/quote-left.svg") no-repeat
-		&__button
-			position: absolute
-			top: 50%
-			transform: translateY(-95%)
-			width: 30px
-			height: 30px
-			background-size: 10px
-			background-position: center
-			cursor: pointer
-			border: none
-			z-index: 99
-			&--prev
-				background-size: 10px
-				background: url("../img/arrow-prev-secondary.svg") no-repeat
-				background-position: center
-				left: 16px
-			&--next
-				background-size: 10px
-				background: url("../img/arrow-next-secondary.svg") no-repeat
-				background-position: center
-				right: 22px
-		&__profile
+			padding: 38px
+			max-height: 354px
+			padding-top: 36px
+		&__card1
 			display: flex
-			flex-direction: column
-			align-items: center
-			margin-top: -45px
-			margin-bottom: 32px
+			flex-wrap: wrap
+			width: 555px
+			min-height: 267px
+			background: #FFFFFF
+			border: 1px solid #E5EAF4
+			box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+			border-radius: 8px
+			padding: 38px
+			max-height: 354px
+			padding-top: 36px
+			padding-bottom: 26px
+
+		&__title
+			font-size: 36px
+			line-height: 48px
+			letter-spacing: 0.2px
+			margin-bottom: 50px
+			margin-top: 20px
 
 		&__avatar
-			width: 90px
-			height: 90px
+			width: 58px
+			min-height: 56px
 			border-radius: 50%
-			object-fit: cover
-			margin-bottom: -5px
-		&__username
-			font-weight: bold
-			font-size: 12px
-			line-height: 15px
-			margin-bottom: 10px
-			color: $primary
-		&__date
-			font-weight: normal
-			font-size: 10px
-			line-height: 13px
-			margin-bottom: 4px
-		&__rating
-			display: flex
-			align-items: center
-		&__text
-			max-width: 537px
-			font-weight: normal
-			font-size: 12px
-			line-height: 160%
-			text-align: justify
-			margin: auto
-			overflow-y: auto
-			height: 114px
+		&__name
+			font-size: 24px
+			line-height: 32px
+			margin-bottom: 5px
+			letter-spacing: 0.2px
+		&__job
+			font-size: 16px
+			line-height: 28px
+			color: $text-color-description
+		&__description
+			font-size: 14px
+			line-height: 24px
+			color: $text-color-description
+			max-height: 264px
+			display: block
+		&__description1
+			font-size: 14px
+			line-height: 26px
+			color: $text-color-description
+	&-button
+
+		&-next
+			position: absolute
+			top: 258px
+			left: 125px
+			transform: translateY(-50%)
+			z-index: 100
+			width: 50px
+			height: 50px
+			border: none
+			background-size: 10px
+			background-color: transparent
+			cursor: pointer
+			background: url(../img/arrow.png) no-repeat
+			box-shadow: 1px -5px 15px #ccc
+			background-position: center
+			transform: rotate(180deg)
+			border-radius: 50%
+
+		&-prev
+			position: absolute
+			top: 285px
+			right: 123px
+			transform: translateY(-50%)
+			z-index: 100
+			width: 50px
+			height: 50px
+			border: none
+			background-size: 10px
+			background-color: transparent
+			cursor: pointer
+			background: url(../img/arrow.png) no-repeat
+			box-shadow: 1px 5px 15px #ccc
+			border-radius: 50%
+
+			background-position: center
+			z-index: 1

@@ -7,17 +7,21 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$news = $_POST['email'];
 $message = $_POST['message'];
 
 
+
 // Формирование самого письма
-if(isset($name, $phone, $message)) {
-$title = "New message Best Tour Plan";
+if(isset($name, $phone, $message, $news)) {
+$title = "Новое сообщение";
 $body = "
-<h2>New message</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
-<b>Message:</b><br>$message
+<h2>Новое сообщение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br>
+<b>Почта:</b> $news
+<br>
+<b>Сообщение:</b><br>$message
 " 
 ;
 
@@ -25,21 +29,7 @@ header('Location: thankyou.html');
 
 };
 
-$news = $_POST['news'];
 
-// Формирование самого письма
-
-if(isset($news)) {
-$title = "New message Best Tour Plan";
-$body = "
-<h2>New message</h2>
-<b>New email for newletter:</b> $news
-" 
-;
-
-header('Location: thanknews.html');
-
-};
 
 
 

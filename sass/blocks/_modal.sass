@@ -1,79 +1,110 @@
+*
+	outline: none
+body
+	margin: 0
+	padding: 0
+	width: 100vw
+
 .modal
-
-	&__overlay
-		position: fixed
-		left: 0
-		top: 0
-		right: 0
-		bottom: 0
-		background-color: rgba(0, 143, 223, 0.39)
-		z-index: 100
-		visibility: hidden
-		opacity: 0
-		transition: opacity 1s
-
-		&--visible
-			visibility: visible
-			opacity: 1
-	&__dialog
-		position: fixed
-		top: 50%
-		left: 50%
-		max-width: 478px
-		padding: 23px 88px
-		padding-bottom: 33px
-		transform: translate(-50%, -50%)
-		color: $light
-		background-color: $dark
-		border-radius: 8px
-		z-index: 101
-		visibility: hidden
-		opacity: 0
-		transition: opacity 1s
-		&--visible
-			visibility: visible
-			opacity: 1
-			max-height: 487px
-
-	&__close
-		position: absolute
-		right: 18px
-		top: 17px
-		text-decoration: none
-
-	&__input
-		width: 100%
-		margin-bottom: 15px
+	position: fixed
+	visibility: hidden
+	display: flex
+	top: 0
+	left: 0
+	background-color: rgba(#00B8D9,.5)
+	width: 100vw
+	height: 100vh
+	opacity: 0
+	transition: .2s all
+	&-title
+		text-align: center
 	&__message
 		width: 100%
 		min-height: 123px
+	 margin-top: 15px
 	 margin-bottom: 15px
-	&__info
-		display: block
-		font-style: normal
-		font-weight: bold
+	 font-weight: normal
 		font-size: 12px
 		line-height: 15px
-		color: $footer-text-color
-	&__title
+		padding: 10px 15px
+		border: 2px solid #1565D8
+		border-radius: 5px
+		&::placeholder
+			color: #1565D8
+
+	&_active
+		visibility: visible
+		opacity: 1
+	&-dialog
+		display: flex
+		position: fixed
+		padding: 55px 25px
+		top: 50vh
+		left: 50vw
+		border: 1px solid #ccc
+		transform: translate(-50%, -50%)
+		background-color: rgba(#fff,.8)
+		border-radius: 5px
+		z-index: 9999
+		width: 450px
+		overflow: hidden
+		flex-direction: column
+.form
+	display: flex
+	flex-direction: column
+	width: 100%
+	position: relative
+	&__input
+		padding: 15px 15px
+		border-radius: 5px
+		border: 2px solid #1565D8
+		margin-top: 20px
+		width: 100%
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+
+		&::placeholder
+			color: #1565D8
+
+	&-button
+		padding: 10px 15px
+		border-radius: 8px
+		background-color: #FAFDFF
+		border: 2px solid #1565D8
+		color: #1565D8
 		font-weight: bold
-		font-size: 18px
-		line-height: 23px
-		text-transform: uppercase
-		margin-bottom: 15px
-		margin-top: 10px
+		font-size: 16px
+		line-height: 22px
 		text-align: center
 
-	&__button
-	&-contact
-		&-button
-			width: 302px
-			display: flex
-			justify-content: space-between
-			align-items: center
-			overflow-y: auto
-	&__form
-		display: flex
-		align-items: center
-		justify-content: space-between
-		flex-wrap: wrap
+		&_close
+			position: absolute
+			top: 0px
+			right: 0px
+			border: none
+			font-size: 20px
+			background: transparent
+			color: #1565D8
+		&:hover
+			color: $light
+	&_send-mail
+		padding: 20px
+
+.invalid
+ font-size: 14px
+ color: red
+.button
+	&:hover
+		background-color: $text-color-link
+		color: $light
+	&_close
+		position: absolute
+		top: 0px
+		right: 0px
+		border: none
+		font-size: 20px
+		background: transparent
+		color: #1565D8
+		&:hover
+			color: $light
