@@ -21,9 +21,14 @@ const swiper = new Swiper(".projects-slider", {
     enabled: true,
   },
   breakpoints: {
-    576: {
+    768: {
       spaceBetween: 30,
     },
+    576: {
+      spaceBetween: 30,
+      slidesPerView: 2,
+    },
+
     490: {
       slidesPerView: 2,
       spaceBetween: 30,

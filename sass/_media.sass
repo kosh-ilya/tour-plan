@@ -1,6 +1,5 @@
 @media	( max-width: 1920px	)
 	.main
-
 		&-image
 			flex: 1 0 68%
 			transform: translate(-77%, 0px)
@@ -9,25 +8,11 @@
 			margin-top: 35px
 			max-width: 1005px
 			max-height: 589px
-
 			&__image
 				width: 100%
 				height: 100%
-
 				position: absolute
 
-	/*.projects
-	 /*&-slider
-	 /*&__slide
-	 /*width: 490px
-	 /*height: 529px
-	 /*&__image
-	 /*width: 490px
-	 /*height: 529px
-
-			/*&__image2
-			/* width: 490px
-			/* height: 529px
 @media	( min-width: 1440px	)
 	.projects
 		&-slider
@@ -38,9 +23,6 @@
 		 max-width: 360px
 		 min-height: 400px
 
-		/*	&__image1
-		 display: none
-
 @media	( max-width: 1433px	)
 	.projects
 		&-text
@@ -48,6 +30,7 @@
 				font-size: 24px
 				line-height: 32px
 				letter-spacing: 0.2px
+
 @media	( max-width: 1300px	)
 	.container
 		max-width: 1140px
@@ -63,13 +46,6 @@
 		&-slider
 			&__image
 			&-text
-	.reviews
-		&-button
-
-			&-next
-				left: 36px
-			&-prev
-				right: 36px
 
 @media (max-width: 1200px)
 	.contaner
@@ -102,25 +78,23 @@
 			margin-top: 50px
 			&__image
 				margin-right: 0
+				margin-left: 27px
+
 		&__product
 			order: 1
 			margin-right: 0
 			text-align: center
-
 		&__service
 			order: 2
 			margin-right: 0
 			text-align: center
-
 		&__company
 			order: 3
 			margin-right: 0
 			text-align: center
-
 		&__more
 			order: 4
 			margin-right: 0
-
 			text-align: center
 		&__list
 			width: 230px
@@ -135,19 +109,24 @@
 		padding-left: 20px
 		padding-right: 20px
 		&-slider
+			&__wrapper
+				max-width: 904px
+			&-avatar
+				margin: 0 auto
+				margin-bottom: 20px
 			&-text
 				text-align: center
 			&__card
-				width: 80%
+				width: 100%
 				min-height: 267px
 				margin: 0 auto
+				padding: 15px
+				padding-top: 20px
+				padding-left: 20px
 
 		&-button
-
 			&-next
-				left: -11px
-			&-prev
-				right: 40px
+				left: -27px
 
 @media (max-width: 992px)
 	.container
@@ -156,13 +135,11 @@
 	.nav
 		&-menu
 			margin-left: 0px
-
 	.main
 		flex-wrap: wrap
 		overflow: visible
 		&-image
 			flex: 0 0 100%
-
 			transform: translate(21%, 0px)
 			position: relative
 			max-width: 100%
@@ -173,9 +150,6 @@
 			display: flex
 			flex-direction: column
 			align-items: center
-		&__title
-
-		&__textmin
 
 		&__text
 			text-align: center
@@ -213,9 +187,16 @@
 			width: 175px
 	.reviews
 		&-slider
+			&__wrapper
 			&__card
 				width: 90%
 				margin: 0 auto
+		&-button
+			&-prev
+				right: 19px
+			&-next
+				left: 19px
+				top: 41%
 	.projects
 		&-slider
 			&-text
@@ -302,6 +283,9 @@
 				font-size: 28px
 
 	.services
+		&__description
+			text-align: center
+
 		&-card
 			&__description
 				margin-left: 0
@@ -310,7 +294,10 @@
 	.network
 		padding-bottom: 56px
 		&-card
-			max-width: 250px
+			max-width: 258px
+			margin-bottom: 50px
+		&-wrap
+			justify-content: space-around
 	.footer
 		&__list
 			width: 250px
@@ -319,6 +306,24 @@
 		z-index: 100
 		&-dialog
 			width: 300px
+	.reviews
+		&-slider
+			&__wrapper
+			&__card
+
+		&-button
+			&-prev
+				right: 13px
+			&-next
+				left: 13px
+				top: 41%
+	.projects
+		padding-bottom: 0
+		&-slider
+			&-text
+				min-height: 104px
+				&__subtitle
+					margin-bottom: 0
 @media ( max-width: 576px )
 	.services
 		&-cards
@@ -350,26 +355,51 @@
 				display: none
 			&-next
 				display: none
+	.reviews
+		&-slider
+			&__wrapper
+			&__card
+
+		&-button
+			&-prev
+				right: 0px
+			&-next
+				left: 0px
+				top: 41%
 
 @media	 ( max-width: 490px	)
+	.main
+		&__title
+			font-size: 38px
+		&__text
+			font-size: 38px
+
 	.services
 		&-card
+			width: 450px
 			flex-direction: column
 			align-items: start
+			padding-top: 14px
 			&__title
 				margin-left: 0
 			&__description
 				margin-left: 0
+			&__image
+				margin-top: 0
+				margin-bottom: 6px
 	.partners
 		&__title
 			margin-top: 100px
 		&-text
+			margin-bottom: 50px
 			&__title
 				font-size: 28px
 				line-height: 29px
 			&-description
 				font-size: 13px
 				line-height: 24px
+			&__text
+				margin-bottom: 15px
 	.network
 		&__title
 			margin-bottom: 24px
@@ -379,7 +409,7 @@
 			font-size: 28px
 			line-height: 36px
 		&-card
-			max-width: 150px
+			max-width: 165px
 			&__description
 				font-size: 13px
 				line-height: 19px
@@ -395,16 +425,24 @@
 			&__title
 				margin-bottom: 8px
 	.friends
+		padding-left: 15px
+		padding-right: 15px
+		&-description
+			font-size: 16px
+
 		&-title
 			font-size: 32px
 			line-height: 40px
 	.footer
+		padding-left: 20px
+		padding-right: 20px
 		&-wrap
-			justify-content: space-between
+			justify-content: space-evenly
+			padding: 0
 		&-link
 
 		&__list
-			width: 145px
+			width: 152px
 			text-align: center
 	.projects
 
@@ -442,6 +480,18 @@
 				max-width: 354px
 				text-align: center
 				max-height: 180px
+	.reviews
+		&-slider
+			&__wrapper
+			&__card
+				padding: 20px
+
+		&-button
+			&-prev
+				right: 0px
+			&-next
+				left: 0px
+				top: 42%
 
 @media ( max-width: 350px	)
 	.partners
@@ -462,6 +512,8 @@
 				align-items: center
 				justify-content: space-evenly
 	.friends
+		padding-left: 5px
+		padding-right: 5px
 		&-title
 			font-size: 28px
 			line-height: 30px
@@ -507,10 +559,19 @@
 		&-button
 			&-prev
 				display: none
-				&-next
-					display: none
+			&-next
+				display: none
+	.reviews
+		&-button
+			&-next
+				top: 44%
 
 @media ( max-width: 320px	)
+	html
+		overflow-x: hidden
+
+	body
+		overflow-x: hidden
 	.container
 		/*padding-left: 8px
 		/*padding-right: 8px
@@ -705,7 +766,7 @@
 			padding: 0 20px
 
 		&__list
-			width: 132px
+			width: 120px
 			margin-bottom: 23px
 			text-align: left
 		&__title
@@ -789,19 +850,20 @@
 				padding-bottom: 18px
 		&-button
 			&-prev
-				top: 109%
-				right: 41%
+				top: 113%
+				right: 40%
 			&-next
-				top: 104%
+				top: 106%
 				left: 43%
 	.projects
 		padding-top: 18px
 		padding-bottom: 0
 		&-slider
-
 			&__slide
 				width: 300px
 				min-height: 404px
+			&__wrap
+				align-items: center
 
 			&__image
 				max-height: 300px

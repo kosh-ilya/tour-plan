@@ -14,6 +14,11 @@
 		max-width: 1140px
 		margin: 0 auto
 		background-color: #fff
+		&__wrapper
+			max-width: 1140px
+			margin: auto
+			position: relative
+
 		&__wrap
 			position: relative
 		&-text
@@ -46,6 +51,7 @@
 			padding: 38px
 			max-height: 354px
 			padding-top: 36px
+
 		&__card1
 			display: flex
 			flex-wrap: wrap
@@ -83,8 +89,9 @@
 			font-size: 14px
 			line-height: 24px
 			color: $text-color-description
-			max-height: 264px
+			max-height: 129px
 			display: block
+			overflow-y: auto
 		&__description1
 			font-size: 14px
 			line-height: 26px
@@ -94,8 +101,8 @@
 		position: relative
 		&-next
 			position: absolute
-			top: 50%
-			left: 125px
+			top: 44%
+			left: -25px
 			transform: translateY(-50%)
 			z-index: 10000
 			width: 50px
