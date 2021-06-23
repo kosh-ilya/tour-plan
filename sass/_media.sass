@@ -121,18 +121,22 @@
 @media (max-width: 992px)
 	.container, .newsletter-wrapper
 		max-width: 780px
-		.logo
-			width: 132px
-		.navbar
-			&-top
-				padding: 30px 0
+	.logo
+		width: 132px
+	.navbar
+
+		&-top
+			padding: 30px 0
 			&__search
-				margin-left:
-			&-menu
-				padding: 21px 0
-				&__link
-					font-size: 12px
-					line-height: 15px
+		&-menu
+			padding: 21px 0
+			&__link
+				font-size: 12px
+				line-height: 15px
+			&__link:hover
+				text-decoration: none
+				color: $light
+
 	.search
 		&__input
 			max-width: 340px
@@ -153,13 +157,15 @@
 	.booking
 		width: 375px
 		margin-left: 0
-	.map
+	.map1
 		width: 375px
 		margin-left: 0
 	.reviews
 		&-slider
 			&__item
 				max-width: 580px
+				&::before, &::after
+					display: none
 	.activities
 		&-wrapper
 			flex-wrap: wrap
@@ -297,8 +303,6 @@
 				width: 645px
 	.button
 		cursor: default
-	a
-		cursor: default
 	.modal
 		&__button
 			min-width: 120px
@@ -330,7 +334,7 @@
 		width: 340px
 		&__button
 			width: 100%
-	.map
+	.map1
 		width: 340px
 	.newsletter
 		padding: 72px 0 72px
@@ -445,12 +449,14 @@
 			&--mb-3
 				margin-top: 30px
 			&--mb-4
-				margin-top: 16px
+				margin-top: 28px
 				margin-bottom: 34px
 			&--mb-5
 				margin-bottom: 16px
 			&--mb-6
 				margin-bottom: 20px
+			&--mb-7
+				margin-bottom: 17px
 			&--inline
 				margin-top: 42px
 		&__message
@@ -460,6 +466,9 @@
 			font-size: 14px
 			line-height: 160%
 			margin-bottom: 22px
+		&__text2
+
+		&__text1
 		&__contact
 			&-details
 				grid-column: 1 / 8
@@ -470,9 +479,9 @@
 				flex-basis: 47.3%
 		&__item
 			&--mb-2
-				margin-bottom: 15px
+				margin-bottom: 2px
 			&--mb-8
-				margin-bottom: 20px
+				margin-bottom: 11px
 		&-payment
 			display: flex
 			justify-content: space-between
@@ -497,13 +506,13 @@
 					min-width: 35px
 				&--mr-9
 					margin-left: 5px
-					margin-top: 2px
+					margin-top: 15px
 				&--mr-10
 					max-width: 33px
 	.modal
 		&__dialog
 			max-width: 378px
-			padding: 23px 58px
+			padding: 23px 30px
 		&__button
 			min-width: 120px
 @media (max-width: 725px)
@@ -610,8 +619,14 @@
 
 	.booking
 		width: 100%
+		&__button
+			max-width: 550px
+
 	.map
-		width: 100%
+		width: 550px
+		&-wrap
+			width: 100%
+			margin-left: 0
 	.newsletter
 		&-wrapper
 			max-width: 550px
@@ -825,11 +840,12 @@
 
 		&-booking
 			&-description
+				display: none
 				height: 50px
 				overflow-y: auto
 				margin-bottom: 5px
 			&-title
-				margin-bottom: 5px
+				margin-bottom: 50px
 	.footer
 		&-wrapper
 			grid-template-columns: 1fr
@@ -886,7 +902,7 @@
 				margin: 0
 	.modal
 		&__dialog
-			width: 280px
+			width: 320px
 			padding: 23px 18px
 		&__button
 			min-width: 80px
@@ -943,8 +959,8 @@
 			&__button
 				align-items: start
 	.modal
-		&-dialog
-			max-width: 240px
+		&__dialog
+			width: 300px
 
 @media (max-width: 320px)
 	.container
@@ -1012,7 +1028,9 @@
 	.booking
 		height: 207px
 	.map
-		height: 173px
+		&-wrap
+			margin-top: 20px
+		 height: 173px
 	.slider
 		&__button
 			&_prev
@@ -1078,16 +1096,34 @@
 					margin-left: 89px
 	.activities
 		padding-top: 12px
+		padding-bottom: 40px
 		&__title
 		 font-weight: bold
 			font-size: 18px
 			line-height: 23px
 			margin-bottom: 37px
+		&__card1
+			order: 1
+		&__card2
+			order: 3
+		&__card3
+			order: 2
+			margin-bottom: 28px
+		&__card4
+			order: 4
+	.card
+		&__button
+			padding: 7px 20px
+
 	.packages
 		padding-top: 20px
 		&__title
 			margin-bottom: 30px
-			font-size: 32px
+			font-size: 24px
+		&-card1
+			&-booking
+				padding: 30px 20px 25px 20px
+
 	.footer
 		padding-top: 63px
 		padding-bottom: 53px
@@ -1107,19 +1143,24 @@
 			grid-row: 3 / 4
 		&__title
 			&--mb-5
-				margin-top: 9px
+				margin-top: 7px
+
 			&--mb-6
 				margin-top: 10px
 			&--mb-3
-				margin-top: 11px
+				margin-top: 10px
 			&--mb-4
-				margin-top: 8px
+				margin-top: 9px
 				margin-bottom: 15px
+			&--mb-7
+				margin-top: 10px
+				margin-bottom: 16px
 		&__icon
 			&-wrapper
 				&--mr-9
 					min-width: 25px
 					margin-left: 2px
+					margin-top: 3px
 				&--mr-8
 					min-width: 25px
 					margin-left: 5px
@@ -1159,12 +1200,16 @@
 			&-ul
 				margin-bottom: 0
 			&-item
-				margin-top: 5px
+				margin-top: 7px
 				margin-right: 7px
 			&-image
 				margin-top: 10px
 		&__text
 			margin-bottom: 20px
+		&__text2
+			margin: 0
+		&__text1
+			margin-left: 4px
 	.modal
 		&__dialog
 			max-width: 250px
@@ -1185,3 +1230,68 @@
 		&__dialog
 			height: 280px
 			overflow-y: auto
+@media	(max-width: 992px)
+	.breadcrumb
+		a:hover
+			text-decoration: none
+			color: inherit
+			cursor: default
+	.navbar
+		a:hover
+			text-decoration: none
+			cursor: default
+			color: $light
+	.user
+		&__name:hover
+			text-decoration: none
+			cursor: default
+			color: $text-color
+	.user
+		&__name
+			&--light:hover
+				color: $light
+
+	.booking
+		a:hover
+			text-decoration: none
+			cursor: default
+			color: $light
+		&__button
+			cursor: default
+
+	.button
+		&-home
+			&-link:hover
+				cursor: default
+				text-decoration: none
+				color: $light
+
+	.footer
+		a:hover
+			text-decoration: none
+			cursor: default
+			color: $footer-text-color
+@media	( min-width: 992px	)
+
+	.booking
+		&__num:hover
+			color: $primary
+			text-decoration: underline
+			cursor: pointer
+
+	.breadcrumb
+		a:hover
+			cursor: pointer
+			color: $primary
+			text-decoration: underline
+	.footer
+		a:hover
+			color: $primary
+			text-decoration: underline
+			cursor: pointer
+	.button
+		&-home
+			&-link:hover
+				cursor: pointer
+				text-decoration: none
+				color: $light

@@ -2,6 +2,13 @@
 	background-color: $dark
 	color: $light
 	padding: 108px 46px
+	padding-bottom: 46px
+	&__button
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		max-width: 160px
+
 	&-wrapper
 		display: grid
 		grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -67,7 +74,7 @@
 
 		&--mb-3
 			margin-top: 2px
-			margin-bottom: 25px
+			margin-bottom: 23px
 		&--mb-4
 			margin-bottom: 34px
 		&--mb-6
@@ -80,9 +87,18 @@
 		display: flex
 		align-items: flex-start
 		&--mb-2
-			margin-bottom: 15px
+			margin-bottom: 4px
 		&--mb-8
-			margin-bottom: 20px
+			margin-bottom: 9px
+			display: flex
+			flex-direction: row
+	&__text1
+		margin: 0
+		list-style: none
+	&__text2
+		padding: 0
+		margin-top: 10px
+		margin-bottom: 12px
 
 	&__icon
 		&-wrapper
@@ -91,13 +107,14 @@
 			&--mr-10
 				margin-left: 4px
 
-		&--mr-9
-			margin-left: 0px
+			&--mr-9
+				margin-left: 0px
+				margin-top: 17px
 		&--mr-8
 			margin-bottom: 4px
 	&__text
 		color: $footer-text-color
-		margin-bottom: 23px
+		margin-bottom: 22px
 		font-weight: normal
 		font-size: 14px
 		line-height: 160%
@@ -154,7 +171,7 @@
 			font-weight: normal
 			font-size: 12px
 			line-height: 15px
-			color: $light
+			color: $footer-text-color
 
 		&-image
 			max-width: 132px
@@ -176,6 +193,7 @@
 			align-items: center
 	&__info
 		display: block
+
 label
 	&.invalid
 		position: absolute

@@ -1,0 +1,35 @@
+.faq
+	padding: 120px 0
+	background-color: $bg-color-black
+	&__title
+		@include text-title
+		margin: 0
+		margin-bottom: 80px
+	&-spoiler
+		&-question
+			max-width: 637px
+			margin: 0 auto
+			padding: 15px 30px
+			border-radius: 8px
+			margin-bottom: 40px
+			background: transparent
+			border: 2px solid #1A3236
+
+			&_active
+				background: #1A3236
+
+			&__text
+				@include	text-description
+				display: inline-block
+				text-align: center
+			&__icon
+				padding-left: 30px
+		&-answer
+			&__text
+				@include text-nav
+				display: none
+				margin-top: 15px
+.minus
+	padding-left: 30px
+	padding-bottom: 5px
+	padding-top: 5px

@@ -1,0 +1,43 @@
+.adapt
+	padding: 120px 0
+	background-color: $bg-color-black
+	&__title
+		text-align: center
+		@include text-title
+		margin-bottom: 80px
+	&-slider
+		&__slide
+			max-height: 600px
+			&::before
+				content: " "
+				position: absolute
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				background-color: $text-green
+				left: 0
+				bottom: 5%
+			&:last-child:after
+				content: " "
+				position: absolute
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				background-color: $text-green
+				right: 0
+				bottom: 5%
+		&__wrap
+			display: flex
+			flex-direction: column
+			max-width: 400px
+			margin-bottom: 40px
+			position: relative
+		&__image
+			max-width: 237px
+			display: block
+			margin: 0 auto
+			margin-bottom: 40px
+		&__text
+			@include text-description
+			text-align: center
+			max-width: 396px

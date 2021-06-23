@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
 
     <title>Best Tour Plan - Hotel Booking</title>
 
@@ -14,12 +13,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./img/icon/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo wow animate__animated animate__pulse"
+          <a href="index.html" class="logo"
             ><img
               class="logo__image"
               src="./img/horizontal-logo.svg"
@@ -157,8 +162,10 @@
       <div class="container">
         <div class="footer-wrapper">
           <a
-            class="footer-logo-link wow animate__animated animate__pulse"
-            href="#"
+            class="footer-logo-link"
+            data-aos="zoom-out-right"
+            data-aos-duration="1000"
+            href="index.html"
           >
             <img
               src="./img/vertical-logo.svg"
@@ -197,7 +204,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title footer__title--mb-5">
+            <h3 class="footer__title footer__title--mb-7">
               ADDITIONAL INFORMATION
             </h3>
             <ul class="footer__ul">
@@ -297,11 +304,26 @@
                   />
                 </div>
 
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-&nbsp;56-61-38 (08:00 am –
-                20:00 pm)
-                <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <ul class="footer__text2">
+                  <li class="footer__text1">
+                    Tel (business hours) :
+                    <a class="footer__link" href="tel:2691500">269 1500</a>
+                  </li>
+                  <li class="footer__text1">
+                    Tel (hotline) Monday - Saturday:
+                    <a class="footer__link" href="tel:52-56-61-38"
+                      >52-&nbsp;56-61-38</a
+                    >
+                    (08:00 am – 20:00 pm)
+                  </li>
+                  <li class="footer__text1">
+                    Tel (hotline) Sunday:
+                    <a class="footer__link" href="tel:52-56-61-38">
+                      52-56-61-38</a
+                    >
+                    (08:00 am – 14:00 pm)
+                  </li>
+                </ul>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper footer__icon-wrapper--mr-8">
@@ -311,7 +333,9 @@
                     class="footer__icon footer__icon--mr-8"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -336,7 +360,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
-                  minlength="2"
+                  minlength="18"
                 />
               </div>
               <textarea

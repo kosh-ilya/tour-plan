@@ -1,0 +1,36 @@
+.advantage
+	background: $bg-color
+	padding: 120px 0
+	&-title
+	@include text-title
+	&-wrap
+		&-items
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 80px
+			margin-bottom: 40px
+	&-button
+		@include text-nav
+		padding: 18px 36px
+		background-color: #1A3236
+		border: none
+		border-radius: 8px
+		margin-right: 40px
+
+.content
+	&-item
+		max-width: 388px
+		display: flex
+		justify-content: space-between
+		&__text
+			max-width: 204px
+
+		&__title
+		@include text-description
+		text-align: left
+		&__descr
+		@include text-nav
+		text-align: left
+		&__image
+			margin-right: 20px

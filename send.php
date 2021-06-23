@@ -41,6 +41,29 @@ header('Location: thanknews.html');
 
 };
 
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+$news = $_POST['email'];
+
+
+if(isset($name, $phone, $news, $message)) {
+$title = "New message Best Tour Plan";
+$body = "
+<h2>New message</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br>
+<b>New email for newletter:</b> $news
+<br>
+<b>Message:</b><br>$message
+" 
+;
+
+
+header('Location: thankyou.html');
+
+};
+
 
 
 // Настройки PHPMailer
