@@ -375,6 +375,7 @@
 			font-size: 38px
 
 	.services
+		padding-top: 10px
 		&-card
 			width: 450px
 			flex-direction: column
@@ -919,3 +920,53 @@
 		&-dialog
 			height: 280px
 			overflow-y: auto
+@media (max-width: 768px)
+	body
+		cursor: default
+
+	.main
+		&-down
+			&-button
+				&__image
+					&:hover
+						border-radius: 50%
+						width: 54px
+						height: 56px
+						cursor: default
+		&-text-button
+			&:hover
+				background: #183B56
+				cursor: default
+	.friends
+		&-link
+			&:hover
+				background-color: $light
+				color: #0D2436
+	.footer
+		&__link
+			&:hover
+				color: $text-color-description
+		&-link
+			&__icon
+				&:hover
+
+	.nav
+		&-menu
+			&-item
+				&__link
+					&:hover
+						color: $text-color-title
+			&-button
+				&:hover
+					background-color: $light
+					color: $text-color-link
+		&-submenu
+			&-list
+				&__link
+					&:hover
+						color: $light
+	.network
+		&-card
+			&-link
+				&:hover
+					background-color: $light
